@@ -41,13 +41,13 @@ jobs:
           # command: docker push ferretdayo/mounting-frontend:${CIRCLE_TAG}
 workflows:
   version: 2
-  stg_deploy:
+  build_and_deploy:
     jobs:
       - build
       - push-docker-image:
           requires:
             - build
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
+          filters:
+            branches:
+              only:
+                - master
