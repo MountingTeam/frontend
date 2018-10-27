@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mounting/frontend:latest
+        image: ferretdayo/mounting-frontend:latest
         ports:
         - containerPort: 8000
         livenessProbe:

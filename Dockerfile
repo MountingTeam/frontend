@@ -1,7 +1,7 @@
 FROM busybox
 MAINTAINER Ferretdayo <ferretdayo@hotmail.co.jp>
 
-COPY ./build/* /www/html/
+COPY ./build/ /www/html/
 
 EXPOSE 8000
 
